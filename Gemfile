@@ -18,6 +18,8 @@ group :assets do
 end
 
 
+
+
 group :test , :development do
   gem 'rspec-rails' ,  "~> 2.9.0"
   gem "ruby-debug19", "~> 0.11.6"
@@ -31,4 +33,7 @@ group :test do
   gem "database_cleaner", "~> 0.7.2"
   gem "launchy", "~> 2.1.0"
   gem "capybara", "~> 1.1.2"
+  gem "guard-spork", "~> 0.6.1"
+  gem 'spork', '~> 1.0rc'
+  gem "shoulda-matchers"
 end

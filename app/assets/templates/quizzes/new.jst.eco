@@ -1,9 +1,27 @@
 <h2>New Quiz</h2>
 
+<form id="quiz-form">
 <div id="quiz-new">
 
-	<label for="quiz[title]">Title:</label>
-	<input id="quiz-title" name="quiz[title]" type='text'></input>
-	<button id="quiz-create-button">Create</button>
+	<label for="quiz-title">Title:</label>
+	<input id="quiz-title" name="quiz-title" type='text'></input>
+	<button id="quiz-create-btn">Create</button>
 
+</div>
+</form>
+
+<form id="questions-form">
+
+<ul id="questions-list">
+	<li class="question-item">
+		<input name="question-title" class="question-title-input" />
+	</li>
+	<li class="question-item">
+		<input name="question-title" class="question-title-input" />
+	</li>
+</ul>
+</form>
+
+<div id="question-option">
+	<button id="add-new-question">Add New Question</button>
 </div>

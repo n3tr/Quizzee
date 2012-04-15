@@ -1,4 +1,6 @@
 Quizzee::Application.routes.draw do
+  resources :questions
+
   get "home/index"
 
 

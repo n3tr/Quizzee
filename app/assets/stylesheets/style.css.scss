@@ -1,0 +1,117 @@
+
+body{
+	background: url( asset_path('bg.jpg', image) ) center center;
+	padding:40px 0;
+}
+
+
+#login{
+	background: #e0e0e0;
+	display:block;
+	margin: 0 auto;
+	width:400px;
+	padding:8px;
+	border-radius:5px;
+	background: url( asset_path('black-alpha.png', image) ) center center;
+	
+	.inner{
+		background: #ffffff;
+		padding:15px;
+		border-radius:5px;
+	}
+	
+	label{
+		font-size:14px;
+		color: #666666;
+		
+	}
+	
+	#login-links{
+		border-top:1px solid #e0e0e0;
+		margin-top:15px;
+		padding-top:15px;
+		
+		a{
+			font-size:14px;
+			text-decoration:none;
+		
+		}
+	}
+	
+	input[type="text"],input[type="email"],input[type="password"]{
+		height:25px;
+		padding:5px;
+		border-radius:5px;
+		border:1px solid #d0d0d0;
+		box-shadow: 0 0 3px #ccc inset;
+		background: #f8f8f8;
+		margin-top:5px;
+		margin-bottom:10px;
+		width:96%;
+	}
+	
+	input[type="submit"]{
+		height:33px;
+		width:100%;
+		border-radius:5px;
+		color:#f8f8f8;
+		text-shadow:0 1px #444444;
+		font-weight:bold;
+		font-size:16px;
+
+		border:1px solid #909090;
+		background: url( asset_path('green-button-bg.png',image) ) repeat-x;
+		-webkit-transition:0.1s ease all;
+		
+		&:hover{
+			color:#505050;
+			text-shadow:0 1px #fff;
+		}
+	}
+	
+	input[type="checkbox"]{
+		margin-bottom:10px;
+	}
+}
+
+#main{
+	width:740px;
+	margin:0 auto;
+	padding:8px;
+	border-radius:5px;
+	background: url( asset_path('black-alpha.png', image) ) center center;
+	
+	#sidebar{
+		width:200px;
+		float:right;
+		
+		ul{
+			list-style:none;
+			padding:0px;
+			margin:0px;
+			border-radius:5px;
+			overflow:hidden;
+			
+			li{
+				background:#f0f0f0;
+				display:block;
+				
+				a{
+					display:block;
+					text-decoration:none;
+					padding:10px 5px;
+				}
+			}
+		}
+	}
+	
+	#page{
+		width:524px;
+		float:left;
+		background:#fff;
+		border-radius:5px;
+	}
+}
+
+
+

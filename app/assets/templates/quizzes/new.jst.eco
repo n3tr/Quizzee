@@ -1,0 +1,9 @@
+<h2>New Quiz</h2>
+
+<div id="quiz-new">
+
+	<label for="quiz[title]">Title:</label>
+	<input id="quiz-title" name="quiz[title]" type='text'></input>
+	<button id="quiz-create-button">Create</button>
+
+</div>

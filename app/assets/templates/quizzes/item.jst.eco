@@ -1,0 +1,5 @@
+<h3>
+<a href="#q/<%= @quiz.get('id') %>">
+<%= @quiz.get('title') %>
+</a>
+</h3>

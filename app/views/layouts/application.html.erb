@@ -7,10 +7,35 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
+	<% if user_signed_in? %>
+	<section id="main">
+		<div class="inner clearfix">
+		
+			<aside id="sidebar">
+				<ul>
+					<li>
+						<%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+				  	</li>
+				</ul>
+			</aside>
+	
+		<div id="page">
+			<%= yield %>
+		</div>
+	</div> <!-- !inner -->
+	</section>
+	
+	<% else %>
+		<section id="login">
+			<div class="inner">
+	  			<%= yield %>
+			</div>
+		</section>
+	
+	<% end %>
+	
 
-<%= yield %>
+
 
 </body>
 </html>

@@ -3,7 +3,15 @@ window.Quizzee =
   Collections: {}
   Views: {}
   Routers: {}
-  init: -> # alert 'Hello from Backbone!'
+  init: ->
+    
+    new Quizzee.Routers.Quizzes()
+    Backbone.history.start()
+
 
 $(document).ready ->
+  div = $('<div></div>')
+  div.html($('#bootstrap').text())
+  #data = JSON.parse(div.text())
   Quizzee.init()
+

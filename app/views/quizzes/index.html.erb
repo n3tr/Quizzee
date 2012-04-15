@@ -1,0 +1,8 @@
+<script type="text/json" id="bootstrap">
+  {
+    "quiz": <%= @quiz.to_json %>,
+    "users": <%= @user.to_json( only: [:id, :email] ) %>
+  }
+</script>
+
+<div id="quizzes"></div>

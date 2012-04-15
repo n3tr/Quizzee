@@ -1,0 +1,1 @@
+<h2><%= @quiz.get('title') %></h2>
